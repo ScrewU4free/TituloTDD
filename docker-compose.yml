@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  model_service:
+    build:
+      context: .
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./model:/app/model
